@@ -21,4 +21,17 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - persist_to_works
+workflows:
+  version: 2
+  prepare_publish:
+    jobs:
+      - prepare:
+          context: .env
+          filters:
+            branches:
+              only:
+                - master
+      - semantic-release:
+          requires:
+            - prepare
 
