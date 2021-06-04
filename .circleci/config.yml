@@ -42,7 +42,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
       - semantic-release:
           requires:
             - prepare
