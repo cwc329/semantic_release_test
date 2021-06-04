@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/cwc329/semantic_release_test/issues"
   },
-  "homepage": "https://github.com/cwc329/semantic_release_test#readme"
+  "homepage": "https://github.com/cwc329/semantic_release_test#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "github:semantic-release/git",
+    "install": "^0.13.0",
+    "npm": "^7.16.0",
+    "semantic-release": "^17.4.3"
+  }
 }
