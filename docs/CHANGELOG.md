@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/cwc329/semantic_release_test/compare/v1.0.0...v1.0.1) (2021-06-04)
+
+
+### Bug Fixes
+
+* **release:** fix ([715ac37](https://github.com/cwc329/semantic_release_test/commit/715ac375e74f415ce16420c72c46016b51f16e2f))
+
 # 1.0.0 (2021-06-04)
 
 
