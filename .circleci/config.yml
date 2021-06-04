@@ -20,7 +20,19 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - persist_to_works
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+  semantic-release:
+    executor: node-executor
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Update package.json version, Git tag, and CHANGELOG in release branch
+          command: npm run semantic-release || true
+
 workflows:
   version: 2
   prepare_publish:
